@@ -13,6 +13,6 @@ public class HanlpTest {
     @Test
     public void should_nlp() {
         List<Term> terms = HanLP.segment("今天天气不错哦，一起来玩吧");
-        terms.forEach(term -> System.out.println(term));
+        terms.forEach(System.out::println);
     }
 }
